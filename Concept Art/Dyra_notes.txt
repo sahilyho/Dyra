@@ -1,0 +1,6 @@
+1. A place where you can buy and sell houses that look run down but mythical.
+2. Be able to find homes by zipcode and city.
+3. Show an array of homes and organize them by hot/views/gems/crime rate. (Grab screenshots of Tucker and Dale)
+4. Website must create a log in and password. 
+5. Ability to contact an agent. (Pictures of agents that look ugly and unprofessional) 
+6. Ability to post a review of the buying and selling experience. (Bad experience: I bought a house painted with blood. It was just regular paint.) 

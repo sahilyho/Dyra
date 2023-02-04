@@ -1,0 +1,108 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Jura:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	background-size: cover;
+}
+body {
+	font-family: Jura, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+a.button {
+	margin: 30px;
+	padding: 10px 15px;
+	border-radius: 10%;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	background-color: aqua;
+}
+a.button:hover {
+	transform: scale(0.98);
+}
+
+.container {
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	width: 500px;
+}
+
+.title {
+	margin: 0;
+}
+
+.subtitle {
+	display: inline-block;
+	margin: 10px 0 20px;
+	opacity: 0.8;
+}
+
+.header {
+	background-color: rgb(0, 157, 255);
+	color: aliceblue;
+	padding: 30px 80px;
+}
+
+.header input {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 50px;
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	padding: 10px 15px;
+	width: 100%;
+}
+
+.header input:focus {
+	outline: none;
+}
+
+.realtor-list {
+	background-color: azure;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.realtor-list li {
+	display: flex;
+	padding: 40px;
+}
+
+.realtor-list img {
+	border-radius: 40%;
+	object-fit: cover;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+}
+
+.realtor-list .realtor-info {
+	margin-left: 10px;
+}
+
+.realtor-list .realtor-info h4 {
+	margin: 0 0 10px;
+}
+
+.realtor-list .realtor-info p {
+	font-size: 12px;
+}
+
+.realtor-list li:not(:last-of-type) {
+	border-bottom: 1px solid #eee;
+}
+
+realtor-list li.hide {
+	display: none;
+}

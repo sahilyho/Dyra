@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "pg": "^8.8.0",
+    "requirejs": "^2.3.6",
+    "unirest": "^0.6.0"
+  }
+}

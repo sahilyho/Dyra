@@ -1,0 +1,191 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dyra-Buy And Sell Houses</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!-- Modal Calculator-->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>COUNT YOUR LOOT</h2>
+				</div>
+				<div class="modal-body">
+					<div class="calculator-grid">
+						<div class="output">
+							<div data-previous-operand class="previous-operand"></div>
+							<div data-current-operand class="current-operand"></div>
+						</div>
+						<button data-all-clear class="span-two">AC</button>
+						<button data-delete>DEL</button>
+						<button data-operation>÷</button>
+						<button data-number>1</button>
+						<button data-number>2</button>
+						<button data-number>3</button>
+						<button data-operation>*</button>
+						<button data-number>4</button>
+						<button data-number>5</button>
+						<button data-number>6</button>
+						<button data-operation>+</button>
+						<button data-number>7</button>
+						<button data-number>8</button>
+						<button data-number>9</button>
+						<button data-operation>-</button>
+						<button data-number>.</button>
+						<button data-number>0</button>
+						<button data-equals class="span-two">=</button>
+					</div>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+		<!-- End Modal Calculator-->
+		<!-- homepage -->
+		<!-- Mobile Navigation -->
+		<button class="nav-btn open-btn">
+			<i class="fas fa-bars"></i>
+		</button>
+		<div class="nav nav-dblue">
+			<div class="nav nav-lblue">
+				<div class="nav nav-white">
+					<button class="nav-btn close-btn">
+						<i class="fas fa-times"></i>
+						<!-- Homepage Navbar -->
+						<ul class="home-nav-container">
+							<li>
+								<button
+									type="button"
+									onClick="location.href='/html/find-homes.html'"
+									class="home-nav-1"
+								>
+									Find<br />
+									Homes
+								</button>
+							</li>
+							<li>
+								<button
+									type="button"
+									onClick="location.href='/html/our-realtors.html'"
+									class="home-nav-2"
+								>
+									Our<br />
+									Realtors
+								</button>
+							</li>
+							<li>
+								<button type="button" class="home-nav-3" id="modal-btn">
+									Count<br />
+									Your Loot
+								</button>
+							</li>
+						</ul>
+						<!-- End Homepage Navbar -->
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- End Mobile Navigation -->
+		<!--Mouse Pointer-->
+		<div class="mouse-square"></div>
+		<div class="mouse-dot"></div>
+		<!--End Mouse Pointer-->
+		<!-- Image Feed -->
+		<div class="img-feed-container">
+			<img class="feed" src="/images/homes/homepage/home-sm0.jpg" />
+			<img class="feed" src="/images/homes/homepage/home-sm1.jpg" />
+			<img class="feed" src="/images/homes/homepage/home-sm2.jpg" />
+			<img class="feed" src="/images/homes/homepage/home-sm3.jpg" />
+			<img class="feed" src="/images/homes/homepage/home-sm4.jpg" />
+			<img class="feed" src="/images/homes/homepage/home-sm5.jpg" />
+		</div>
+		<!-- End Image Feed -->
+		<button
+			type="button"
+			onClick="location.href='/html/my-account.html'"
+			class="my-account"
+		>
+			<b>My Account</b>
+		</button>
+		<!--Background-->
+		<div class="page-bg"></div>
+		<!--End Background-->
+		<div class="search">
+			<input type="text" class="input" placeholder="Search for homes..." />
+			<button class="srch--btn">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+		<div class="welcome">
+			<h2 class="welcome-1">Welcome to Dyra</h2>
+			<p class="welcome-2">
+				Where millions of creatures,<br />
+				from witches to dark wizards, <br />
+				have found their dream homes.
+			</p>
+			<!-- Create Account -->
+			<div class="create-acc">
+				<button
+					type="button"
+					onClick="location.href='/html/create-account.html'"
+					class="create-account"
+				>
+					<b>Create <br />an Account</b>
+				</button>
+			</div>
+			<!-- End Create Account -->
+		</div>
+		<!-- Announcements -->
+		<div class="announcements-container">
+			<h4 class="announcement">
+				Now offering special financing for witchers and bards.
+			</h4>
+		</div>
+		<!-- End Announcements -->
+		<!-- Reviews -->
+		<div class="reviews">
+			<div class="reviews-container">
+				<h3 class="reviews-title">See what our clients are saying:</h3>
+				<div class="review hidden" id="1">
+					Elon Musk.<br />
+					Mars.<br />
+					"My house sold fast. Might sell Twitter headquarters next"
+				</div>
+				<div class="review hidden" id="2">
+					Daghor IV.<br />
+					Kronos.<br />"tera'Daq maghom'e' wIpabtaH."<br />(Best website ever
+					for our Earth vacation home.)
+				</div>
+				<div class="review" id="3">
+					Maria Perez.<br />
+					USA.<br />"My hubby and I were almost homeless. <br />
+					Now that we found this website,<br />
+					I can go back to Hogwartz."
+				</div>
+			</div>
+			<button class="btn" id="prev" disabled><b>Prev</b></button>
+			<button class="btn" id="next"><b>Next</b></button>
+			<!-- End Reviews -->
+		</div>
+		<!-- End Progress -->
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script type="module" src="/scripts/pointer.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<script src="script.js"></script>
+		<!-- End homepage -->
+	</body>
+</html>

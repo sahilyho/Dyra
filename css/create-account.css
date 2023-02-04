@@ -1,0 +1,167 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Jura:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+	--color-success: #4bb544;
+	--color-error: #c33;
+	--border-radius: 4px;
+	--line-border-fill: #2cc7ba;
+	--button-bg: #01ffea;
+	--line-border-empty: rgb(186, 183, 183);
+}
+
+body {
+	font-family: "Lora", "Courier New", Courier, monospace;
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+a.button {
+	margin: 30px;
+	padding: 10px 15px;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	background-color: var(--button-bg);
+	border-radius: 10%;
+	text-decoration: none;
+	color: initial;
+}
+a.button:hover {
+	transform: scale(0.98);
+}
+.mouse-square,
+.mouse-dot {
+	border-radius: 10%;
+	z-index: 300;
+	position: fixed;
+	transform: translate(-50%, -50%) rotate(45deg);
+	opacity: 0;
+	pointer-events: none;
+}
+.mouse-square {
+	width: 2rem;
+	height: 2rem;
+	border: 0.1rem solid var(--line-border-fill);
+	animation: mouseCircleAnim 10s infinite linear;
+}
+@keyframes mouseCircleAnim {
+	0% {
+		width: 2rem;
+		height: 2rem;
+	}
+	25% {
+		width: 4rem;
+		height: 4rem;
+	}
+	35% {
+		width: 1rem;
+		height: 1rem;
+	}
+	70% {
+		width: 4rem;
+		height: 4rem;
+	}
+	100% {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+.mouse-dot {
+	width: 0.1rem;
+	height: 0.1rem;
+	background-color: #2d1251;
+	border: solid 1px var(--line-border-fill);
+	opacity: 0.5;
+	animation: mouseDotAnim 10s infinite linear;
+}
+
+@keyframes mouseDotAnim {
+	0% {
+		width: 0.2rem;
+		height: 0.2rem;
+	}
+	60% {
+		width: 0.5rem;
+		height: 0.5rem;
+	}
+	100% {
+		width: 0.2rem;
+		height: 0.2rem;
+	}
+}
+/* End Mouse */
+
+/* login */
+
+.background {
+	background: url(https://images.unsplash.com/photo-1555815173-1468b0dea5d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1235&q=80)
+		no-repeat center/cover;
+	position: absolute;
+	top: -20px;
+	bottom: -20px;
+	left: -20px;
+	right: -20px;
+	z-index: -1;
+	filter: blur(5px);
+}
+
+.form--hidden {
+	display: none;
+}
+
+.form > *:first-child {
+	margin-top: 0;
+}
+
+.form > *:last-child {
+	margin-bottom: 0;
+}
+
+.form__message--success {
+	color: var(--color-success);
+}
+.form__message--error {
+	color: var(--color-error);
+}
+
+.form__input {
+	transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+	border-color: var(--button-bg);
+	background: white;
+}
+
+.form__input--error {
+	color: var(--color-error);
+	border-color: var(--color-error);
+}
+
+.form__input-error-message {
+	margin-top: 0.5rem;
+	font-size: 0.85rem;
+	color: var(--color-error);
+}
+
+.form__button:hover {
+	background: var(--button-bg);
+}
+
+.form__button:active {
+	transform: scale(0.98);
+}
+
+.form__link:hover {
+	color: var(--line-border-fill);
+	text-decoration: underline;
+}
+
+/* End login */
